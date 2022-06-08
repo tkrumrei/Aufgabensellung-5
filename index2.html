@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GeoSoftware1 Assignment 2</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="src2/style.css">
+
+
+</head>
+<body onload="onLoad()">
+  <script src="src2/pois.js"></script>
+  <script src="src2/point.js"></script>
+  <script src="src2/script.js"></script>
+
+  <div class="a" align="center">
+  <h1>GeoSoftware1 Assignment 2</h1>
+
+  <div>
+  	assignment: 02 <br>
+  	course: Geosoftware I SoSe 2022 <br>
+  	author: Tobias Krumrein <br> <br>
+
+    Diese Seite nimmt eine Liste von POIs im GeoJSON-Format und einen Nutzerdefinierten Standort entgegen, und berechnet die distanz vom Standort zu allen POIs. Die POIs werden, mit aufsteigender Distanz sortiert, in einer Tabelle dargestellt.
+
+    <hr>
+
+    current position geojson: <br>
+    <textarea rows="2" id="userPosition"></textarea><br>
+    <button id="refreshBtn" class="button" type="button">refresh</button>
+    <button id="getLocationBtn" class="button" type="button">get user location</button>
+  </div>
+
+  <br>
+
+  <div id="geoJSON" class="script" align="center">
+  </div>
+
+  <br>
+
+  <table style="width:75%" align="center" id="resultTable">
+    <tr>
+      <th>Coordinates</td>
+      <th>Point of Interest</td>
+      <th>Distance (in meters)</td>
+    </tr>
+  </table>
+
+  </div>
+
+  <div class="card-footer">
+    <a href="startseite.html" style="text-align: center">Zurück zur Startseite </a>
+  </div>
+</body>
+</html>
