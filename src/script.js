@@ -1,6 +1,6 @@
 /**
 * Musterlösung zu Aufgabe 4, Geosoft 1, SoSe 2022
-* @author {Name der studierenden Person}   matr.Nr.: {Matrikelnummer}
+* @author {Tobias Krumrein}   matr.Nr.: {506269}
 */
 
 "use strict";
