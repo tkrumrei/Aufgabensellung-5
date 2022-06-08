@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GeoSoftware1 Assignment 4</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+  integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+  crossorigin=""></script>
+  <script src="src/pointcloud.js"></script>
+  <script src="src/point.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.2/leaflet.draw.js"></script>
+
+  <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+
+  <script defer src="src/script.js"></script>
+
+</head>
+<body onload="onLoad()">
+
+
+
+  <div class="a" align="center">
+    <h1>GeoSoftware1 Assignment 4</h1>
+
+    <div>
+      assignment: 04 MUSTER<br>
+      course: Geosoftware I SoSe 2022 <br>
+      authors: Noel Schnierer, Felix Niebl <br> <br>
+
+      current position geojson: <br>
+      <textarea rows="3" cols="64" id="userPosition"></textarea><br>
+      <button class="button" type="button" onclick="refresh()">refresh</button>
+      <button class="button" type="button" onclick="DocumentInterface.getLocation()">my geolocation</button>
+    </div>
+
+    <br>
+    <div id="nextDepartures">
+      <p id="nextDeparturesHeader"></p>
+      <table style="width:100%" align="center" id="nextDeparturesTable">
+        <tr>
+          <th>line nr</th>
+          <th>Bus line</th>
+          <th>departure</th>
+        </tr>
+
+      </table>
+    </div>
+
+    <br>
+
+    <div id="mainMap"></div>
+
+    <br>
+
+    <table style="width:75%" align="center" id="resultTable">
+      <tr>
+        <th>Bus stop name</td>
+          <th>Coordinates</td>
+            <th>Distance (in meters)</td>
+              </tr>
+            </table>
+
+          </div>
+          <br>
+
+        </div>
+
+      </body>
+      </html>
